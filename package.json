@@ -1,0 +1,39 @@
+{
+  "name": "beer-catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "build:watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberSlug322/beer-catalog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CyberSlug322/beer-catalog/issues"
+  },
+  "homepage": "https://github.com/CyberSlug322/beer-catalog#readme",
+  "devDependencies": {
+    "modern-css-reset": "^1.4.0",
+    "sass": "^1.49.8",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2", 
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11", 
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0", 
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "path": "^0.12.7",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
