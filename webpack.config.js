@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const zlib = require("zlib");
 
 module.exports = {
   devServer: {
@@ -13,9 +12,9 @@ module.exports = {
   },
     mode:"development",
     plugins: [
-        new HtmlWebpackPlugin({
-          title: 'Caching',
-        }),
+        // new HtmlWebpackPlugin({
+        //   title: 'Caching',
+        // }),
         new MiniCssExtractPlugin(),
        ],
     module: {   
@@ -41,7 +40,6 @@ module.exports = {
               use: {
                 loader: 'babel-loader',
               }
-              
             },
         ]
     },
