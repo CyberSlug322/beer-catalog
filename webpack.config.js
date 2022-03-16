@@ -7,6 +7,7 @@ const zlib = require("zlib");
 
 module.exports = {
   devServer: {
+    historyApiFallback: true,
     static: {
       directory: path.join(__dirname, 'public'),
     },
@@ -67,6 +68,7 @@ module.exports = {
     output: {
         filename: '[name].[contenthash].js',
         path: __dirname + '/dist',
+        publicPath: '/'
     },
     optimization: {
       moduleIds: 'deterministic',
