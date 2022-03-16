@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CompressionPlugin = require("compression-webpack-plugin");
+const zlib = require("zlib");
 
 module.exports = {
   devServer: {
@@ -12,10 +15,25 @@ module.exports = {
   },
     mode:"development",
     plugins: [
-        // new HtmlWebpackPlugin({
-        //   title: 'Caching',
-        // }),
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin({
+          title: 'Caching',
+          template:'./src/index.html'
+        }),
+        new CompressionPlugin({
+          filename: "[path][base].br",
+          algorithm: "brotliCompress",
+          test: /\.(js|css|html|svg|jpg)$/,
+          compressionOptions: {
+            params: {
+              [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+            },
+          },
+          threshold: 0,
+          minRatio: Infinity,
+          deleteOriginalAssets: false,
+        }),
        ],
     module: {   
         rules: [
@@ -35,7 +53,7 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-              test: /\.js$/,
+              test: /\.jsx$/,
               exclude: /(node_modules)/,
               use: {
                 loader: 'babel-loader',
@@ -44,7 +62,7 @@ module.exports = {
         ]
     },
     entry: {
-        main: './src/index.js', 
+        main: ['@babel/polyfill','./src/index.jsx'], 
       },
     output: {
         filename: '[name].[contenthash].js',
