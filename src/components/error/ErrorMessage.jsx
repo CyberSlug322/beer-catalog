@@ -1,7 +1,8 @@
 import React from "react";
+import "./ErrorMessage.scss"
 
 const ErrorMessage = () => (
-  <div>
+  <div className="error-message">
     При загрузке информации произошла ошибка
   </div>
 );
