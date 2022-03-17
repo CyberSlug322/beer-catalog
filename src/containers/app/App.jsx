@@ -10,8 +10,10 @@ import {
   Link,
 } from "react-router-dom"
 
+import "../../styles/_variables.css"
+
 const App = () => (
-  <div>
+  <div className="app">
     <ul>
       <li><Link to="/landing">landing</Link></li>
       <li><Link to="/favorites">favorites</Link></li>
