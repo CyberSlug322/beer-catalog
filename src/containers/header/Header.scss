@@ -1,12 +1,8 @@
 @import '../../styles/_variables.css';
 
-.header {
+header {
     background-color: var(--app-sidebar-color);
     box-shadow: 0 0 0 1px var(--primary-color);
     height: 55px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-   
+    width: 100%;  
     };

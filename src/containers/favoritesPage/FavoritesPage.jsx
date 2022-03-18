@@ -1,10 +1,12 @@
 import React from "react";
-import Header from "../header/Header.jsx";
+import Layout from "../layout/Layout.jsx";
+
 
 const FavoritesPage = () => (
   <div>
-    <Header/>
-    favorites
+    <Layout>
+      favorites
+    </Layout>
   </div>
 );
 

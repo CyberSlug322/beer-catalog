@@ -1,10 +1,11 @@
 import React from "react";
-import Header from "../header/Header.jsx";
+import Layout from "../layout/Layout.jsx";
 
 const DetailsPage = () => (
   <div>
-    <Header/>
-    details
+    <Layout>
+      details
+    </Layout>
   </div>
 );
 

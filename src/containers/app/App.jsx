@@ -20,11 +20,11 @@ const App = () => (
         <Route path="/favorites" element={<FavoritesPage/>} />
         <Route path="/details" element={<DetailsPage/>} />
     </Routes>
-    {/* <ul>
+    <ul>
       <li><Link to="/landing">landing</Link></li>
       <li><Link to="/favorites">favorites</Link></li>
       <li><Link to="/details">details</Link></li>
-    </ul> */}
+    </ul>
   </div>
 );
 
