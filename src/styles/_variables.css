@@ -1,7 +1,7 @@
 .app {
   --beer-title-color: #00AEDA;
   --beer-description-color: #7F7F7F;
-  --primary: #5183f5;
+  --primary-color: #5183f5;
   --font-color: #2B2B2B;
   --light-font-color: #F2F7FC;
   --app-sidebar-color: #106CC8;
@@ -11,14 +11,18 @@
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
   --error-color: #f2777a;
-
+  
 
   
 
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2"),
-  url("../../Open_Sans/static/OpenSans/OpenSans-Medium.ttf") format("ttf");
+.font-link {
+  font-family: 'Open Sans', sans-serif;
 }
+
+/* @font-face {
+  font-family: 'Roboto', sans-serif;
+  
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900'); */
