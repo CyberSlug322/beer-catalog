@@ -1,9 +1,5 @@
 import React from "react";
 
-const Placeholder = ({children}) => (
-  <div>
-    <label>{children}</label>
-  </div>
-);
-
+const Placeholder = ({children}) => <label>{children}</label>;
+  
 export default Placeholder;
