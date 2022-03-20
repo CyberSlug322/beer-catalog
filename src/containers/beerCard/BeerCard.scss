@@ -4,13 +4,31 @@
 // --medium-space: 40px;
 // --big-space: 100px;
 
-.beer-card {
-    background-color: var(--beer-description-color);
+.BeerCard-BeerCardContent {
+    background-color: var(--beer-description-color);   
+    min-height: 170px;
+    width: 400px;
+    max-height: 320px;
+    padding: 7px 0px 0px 50px;
+}
+
+.BeerCard-BeerCardImage {
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.BeerCard {
     box-sizing: border-box;
-    border: 1px black;
-    height: 170px;
-    width: 500px;
-    display: inline-block;
-    margin: var(--medium-space) 1px 1px var(--big-space);
+    width: fit-content;
+    padding-top: var(--medium-space);
+    color: var(--light-font-color);
     
+}
+
+Button {
+    margin: 0 60px;
+    background-color: var(--beer-description-color);
+    border: none;
+    color: var(--light-font-color);
+    font-weight: bold;
 }
