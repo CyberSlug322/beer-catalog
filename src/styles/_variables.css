@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 .app {
+  
   --beer-title-color: #00AEDA;
   --beer-description-color: #7F7F7F;
   --primary-color: #5183f5;
@@ -12,17 +15,10 @@
 
   --error-color: #f2777a;
   
-
-  
-
 }
 
 .font-link {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* @font-face {
-  font-family: 'Roboto', sans-serif;
-  
-}
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900'); */
+
