@@ -1,34 +1,9 @@
-@import '../../styles/_variables.css';
 
-// --small-space: 5px;
-// --medium-space: 40px;
-// --big-space: 100px;
-
-.BeerCard-BeerCardContent {
-    background-color: var(--beer-description-color);   
-    min-height: 170px;
-    width: 400px;
-    max-height: 320px;
-    padding: 7px 0px 0px 50px;
-}
-
-.BeerCard-BeerCardImage {
-    width: fit-content;
-    margin: 0px auto;
-}
-
-.BeerCard {
+.beer-card {
     box-sizing: border-box;
     width: fit-content;
     padding-top: var(--medium-space);
     color: var(--light-font-color);
-    
+   
 }
 
-Button {
-    margin: 0 60px;
-    background-color: var(--beer-description-color);
-    border: none;
-    color: var(--light-font-color);
-    font-weight: bold;
-}

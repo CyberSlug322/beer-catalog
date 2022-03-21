@@ -1,0 +1,12 @@
+import React from "react";
+import './Button.scss'
+
+export const Button = ({name, onClick}) => (
+  <button className="button" onClick={onClick}>
+      {name}
+  </button>
+    
+  
+);
+
+
