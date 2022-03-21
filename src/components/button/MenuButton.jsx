@@ -1,7 +1,9 @@
 import React from "react";
 
+import './MenuButton.scss'
+
 export const MenuButton = () => (
-  <input type="button"></input>
+  <button className="menu-button"></button>
 )
   
   

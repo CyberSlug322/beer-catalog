@@ -1,6 +1,6 @@
 @import '../../styles/_variables.css';
 
-.Header {
+.header {
     background-color: var(--app-sidebar-color);
     box-shadow: 0 0 0 1px var(--primary-color);
     font-size: medium;
@@ -10,29 +10,10 @@
 
     }
 
-Input[type="button"] {
-    display: inline-block;
-    background: url('../../img/burgerButton.svg') no-repeat top;
-    background-size: 32px;
-    width: 32px;
-    height: 32px;    
-    border:none;
-    margin: 13px;
-    
-}
-Input[type="button"]:hover {
-    background-position: -10px -83px;
-}
 
-Input[type="button"]:active {
-    background-position: -10px -153px;
-}    
 
-Label {
-    white-space: nowrap;
-    overflow: hidden;
+.header-text {
     display: inline-block;
-    top: 35%;
-    transform: translateY(-65%);
-    padding: 0px 0px 5px 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
