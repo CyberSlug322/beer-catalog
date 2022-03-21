@@ -1,12 +1,10 @@
 import React from "react";
-import Layout from "../layout/Layout.jsx";
+import {Layout} from "../layout/Layout.jsx";
 
-const LandingPage = () => (
-  <div>
+const LandingPage = () => ( 
     <Layout>
     landing!
-    </Layout>
-  </div>
+    </Layout> 
 );
 
 export default LandingPage;

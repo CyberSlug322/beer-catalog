@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "../header/Header.jsx";
+import {Header} from "../header/Header.jsx";
 
-const Layout = ({children}) => (
-  <div>
+import './Layout.scss'
+
+export const Layout = ({children}) => (
+  <div className="Layout">
     <Header/>
     {children} 
   </div>
 );
 
-export default Layout;
+

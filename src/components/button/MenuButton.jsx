@@ -1,11 +1,8 @@
 import React from "react";
 
+export const MenuButton = () => (
+  <input type="button"></input>
+)
+  
+  
 
-const MenuButton = () => {
-  <div>
-
-  </div>
-  }
-
-
-export default MenuButton;
