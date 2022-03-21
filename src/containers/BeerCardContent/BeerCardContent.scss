@@ -1,7 +1,6 @@
-.beer-card__beer-card-content {
+.beer-card-content {
     background-color: var(--beer-description-color);   
-    min-height: 170px;
-    width: 400px;
-    max-height: 320px;
-    padding: 7px 0px 0px 50px;
+    height: 100%;
+    width: 100%;
+    padding: var(--small-space) 0px var(--medium-space) var(--medium-space);
 }

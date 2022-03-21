@@ -4,7 +4,7 @@ import './BeerCardContent.scss';
 
 export const BeerCardContent = ({title, tagline}) => (
 
-    <div className="beer-card__beer-card-content">
+    <div className="beer-card-content">
     <h1>{title}</h1>
     <h2>{tagline}</h2>
     <Button name="OPEN" onClick={() => {throw new Error()}}/>
