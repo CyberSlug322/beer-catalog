@@ -14,11 +14,6 @@ import '../../globalStyles.css'
 
 const App = () => (
   <div className="app font-link">
-    <ul>
-      <li><Link to="/landing">landing</Link></li>
-      <li><Link to="/favorites">favorites</Link></li>
-      <li><Link to="/details">details</Link></li>
-    </ul>
     <Routes>
         <Route path="/landing" element={<LandingPage/>} />
         <Route path="/favorites" element={<FavoritesPage/>} />
