@@ -13,12 +13,10 @@
   --sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --error-color: #f2777a;
-
-
-
- --small-space: 5px;
- --medium-space: 40px;
- --big-space: 100px; 
+  --small-space: 5px;
+  --medium-space: 40px;
+  --big-space: 100px;
+  
 }
 
 .font-link {
