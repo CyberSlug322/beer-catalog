@@ -5,7 +5,7 @@ import './Layout.scss'
 
 export const Layout = ({children}) => (
   <div className="Layout">
-    <Header/>
+    <Header headerElementClassName={"layout__header"}/>
     {children} 
   </div>
 );
