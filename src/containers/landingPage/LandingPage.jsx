@@ -4,7 +4,9 @@ import {BeerList} from "../beerList/BeerList.jsx";
 import './LandingPage.scss'
 
 const LandingPage = () => (
-  <div className="LandingPage">
+  
+  <div className="landing-page">
+    landing!
     <BeerList/>
   </div>
 );

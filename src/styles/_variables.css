@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 .app {
+  
   --beer-title-color: #00AEDA;
   --beer-description-color: #7F7F7F;
-  --primary: #5183f5;
+  --primary-color: #5183f5;
   --font-color: #2B2B2B;
   --light-font-color: #F2F7FC;
   --app-sidebar-color: #106CC8;
@@ -9,19 +12,17 @@
 
   --sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-
   --error-color: #f2777a;
+
 
 
  --small-space: 5px;
  --medium-space: 40px;
- --big-space: 100px;
-
-
+ --big-space: 100px; 
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2"),
-  url("../../Open_Sans/static/OpenSans/OpenSans-Medium.ttf") format("ttf");
+.font-link {
+  font-family: 'Open Sans', sans-serif;
 }
+
+
