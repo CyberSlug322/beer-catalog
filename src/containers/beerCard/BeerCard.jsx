@@ -6,7 +6,7 @@ import './BeerCard.scss'
 
 export const BeerCard = ({title, tagline}) => (
   <div className="beer-card beer-list__beer-card">
-    <BeerImage />
+    <BeerImage imgClassName={"beer-card__image"}/>
     <BeerCardContent tagline={tagline} title={title}/>
   </div>
 );

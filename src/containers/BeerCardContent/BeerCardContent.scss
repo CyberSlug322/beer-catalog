@@ -2,5 +2,9 @@
     background-color: var(--beer-description-color);   
     height: 100%;
     width: 100%;
-    padding: var(--small-space) 0px var(--medium-space) var(--medium-space);
+    padding: 20px;
+}
+
+.beer-card-content__button {
+    margin-top: 20px;
 }

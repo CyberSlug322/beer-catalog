@@ -25,4 +25,14 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.button-font {
+  font-size: large;
+}
 
+.h1-font {
+  font-size: x-large;
+}
+
+.h2-font {
+  font-size: small;
+}
