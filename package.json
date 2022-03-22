@@ -32,7 +32,6 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.6.0",
     "mini-css-extract-plugin": "^2.5.3",
-    "modern-css-reset": "^1.4.0",
     "path": "^0.12.7",
     "sass": "^1.49.8",
     "sass-loader": "^12.6.0",
