@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: wrap;
 
-}
-.beer-list__item {
-    margin: var(--medium-space) 0 0 var(--big-space);
-    
+    .beer-list__item {
+        margin: var(--medium-space) 0 0 var(--big-space);
+        
+    }
 }

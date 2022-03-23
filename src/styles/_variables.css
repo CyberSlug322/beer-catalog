@@ -25,14 +25,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.button-font {
-  font-size: large;
+.font-button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: medium;
 }
 
-.h1-font {
+.font-h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
   font-size: x-large;
 }
 
-.h2-font {
+.font-h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   font-size: small;
 }
