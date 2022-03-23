@@ -14,7 +14,7 @@ const myFetch = async (url, method = "GET") => {
     }
 }
 
-export const getBeers = async (page = 1) => {
+export const fetchBeers = async (page = 1) => {
     const url = `${defaultUrl}/beers?page=${page}`;
     const response = await myFetch(url);
     return response;     
