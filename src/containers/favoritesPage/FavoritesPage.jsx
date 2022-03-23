@@ -1,9 +1,10 @@
 import React from "react";
+import {Layout} from "../layout/Layout.jsx";
 
 const FavoritesPage = () => (
-  <div>
-    favorites
-  </div>
+    <Layout>
+      favorites
+    </Layout>
 );
 
 export default FavoritesPage;
