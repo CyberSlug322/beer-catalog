@@ -1,0 +1,10 @@
+.beer-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .beer-list__item {
+        margin: var(--medium-space) 0 0 var(--big-space);
+        
+    }
+}
