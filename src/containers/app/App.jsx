@@ -7,6 +7,7 @@ import LandingPage from "../landingPage/LandingPage.jsx";
 import {
   Route,
   Routes,
+  Link
 } from "react-router-dom"
 
 import "../../styles/_variables.css"
