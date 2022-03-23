@@ -1,10 +1,7 @@
 .layout {
+  .layout__header {
+    position: fixed;
+    
+  }
   
-}
-.layout__header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
 }

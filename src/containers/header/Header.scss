@@ -3,8 +3,16 @@
 .header {
     background-color: var(--app-sidebar-color);
     box-shadow: 0 0 0 1px var(--primary-color);
-    font-size: medium;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     color: var(--light-font-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
     }
+.header__title {
+    margin-left: 30px;
+}
