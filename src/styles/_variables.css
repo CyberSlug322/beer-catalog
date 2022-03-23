@@ -15,8 +15,11 @@
   --error-color: #f2777a;
 
   --small-space: 5px;
+  --default-space: 20px;
   --medium-space: 40px;
+  --large-space: 80px;
   --big-space: 100px;
+  --biggest-space:160px;
   
 }
 
@@ -32,3 +35,8 @@
   font-size: large;
 }
 
+.font-nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+}
