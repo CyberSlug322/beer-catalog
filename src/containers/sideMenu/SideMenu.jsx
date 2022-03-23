@@ -1,16 +1,12 @@
 import React from "react";
 import './SideMenu.scss'
-import { Link } from "react-router-dom";
+import { SideMenuHeader } from "./SideMenuHeader.jsx";
+import { SideMenuNavigation } from "./SideMenuNavigation.jsx";
 
-export const SideMenu = () => (
-  <div className="side-menu header__side-menu">
-    <div className="side-menu__header">
-        Beer Catalog
-    </div>
-    <ul className="side-menu__nav-bar">
-      <li><Link to="/landing">landing</Link></li>
-      <li><Link to="/favorites">favorites</Link></li>
-    </ul>
+export const SideMenu = ({className}) => (
+  <div className={`side-menu ${className}`}> 
+    <SideMenuHeader className="side-menu__header"/>
+    <SideMenuNavigation className="side-menu__nav-bar"/>
   </div>
 );
 
