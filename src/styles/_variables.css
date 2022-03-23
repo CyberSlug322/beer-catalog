@@ -13,7 +13,6 @@
   --sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --error-color: #f2777a;
-
   --small-space: 5px;
   --medium-space: 40px;
   --big-space: 100px;
@@ -26,9 +25,21 @@
   font-size: medium;
 }
 
-.font-h1 {
+.font-button {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
 }
 
+.font-h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+
+}
+
+.font-h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: small;
+}
