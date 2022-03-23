@@ -1,11 +1,10 @@
 import React from "react";
-import { SideMenu } from "../sideMenu/SideMenu.jsx";
+import {Layout} from "../layout/Layout.jsx";
 
-const LandingPage = () => (
-  <div className="landing-page">
-    landing!
-  </div>
-  
+const LandingPage = () => ( 
+    <Layout>
+      <div className="landing-page">landing!</div>
+    </Layout> 
 );
 
 export default LandingPage;
