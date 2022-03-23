@@ -1,13 +1,16 @@
 import React from "react";
+import {Layout} from "../layout/Layout.jsx";
 import {BeerList} from "../beerList/BeerList.jsx";
 import './LandingPage.scss'
 
-const LandingPage = () => (
+const LandingPage = () => ( 
+    <Layout>
+      <div className="landing-page">
+        landing!
+        <BeerList/>
+      </div> 
+    </Layout> 
 
-  <div className="landing-page">
-    landing!
-    <BeerList/>
-  </div>
 );
 
 export default LandingPage;
