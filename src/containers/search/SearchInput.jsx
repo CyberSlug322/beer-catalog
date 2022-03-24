@@ -1,17 +1,17 @@
 import React from "react";
 
 export const SearchInput = ({ onSearch }) => {
-    
+
     const handleKeyDown = e => {
         if (e.key !== 'Enter' )  return
-        onSearch([e.key, e.target.value]) 
+        onSearch(e.target.value) 
     }
 
   return (
-    <div className="SearchInput">      
+    <div className="search-input">      
         <input
         type="text"
-        placeholder="type and press enter to search"
+        placeholder="Search beers…"
         onKeyDown={handleKeyDown}
         />          
     </div>

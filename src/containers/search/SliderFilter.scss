@@ -1,7 +1,11 @@
 .slider-filter {
+    padding: var(--small-space);
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     .sliderFilter__slider {
-        width: 200px
+        width: 200px;
+        height: 2px;
+        margin-left: 100px;
+        align-self: center;
     }
 }
