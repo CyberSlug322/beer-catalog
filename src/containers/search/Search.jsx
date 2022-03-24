@@ -1,16 +1,14 @@
 import React,{ useState } from "react";
 import { SearchInput } from "./SearchInput.jsx";
 import './Search.scss'
-import { SliderFilter } from "./SliderFilter.jsx";
+import { AdvancedFilter } from "./AdvancedFilter.jsx";
 
-export const Search = ({onInputChange, onIbuChange, onAlcVolumeChange, onEbcChange}) =>{
+export const Search = ({onInputChange, onIbuChange, onAlcVolumeChange, onEbcChange, isFilterHidden}) =>{
 
     return (
         <div className="search-block">
-            <SearchInput onSearch={onInputChange}/>
-            <SliderFilter changeSerchTerm={onAlcVolumeChange}>Alcohol by volume</SliderFilter>
-            <SliderFilter changeSerchTerm={onIbuChange}>International Bitterness Units</SliderFilter>
-            <SliderFilter changeSerchTerm={onEbcChange}>Color by EBC</SliderFilter>
+            <SearchInput onSearch={onInputChange} className="search-block__search-input"/>
+            {!isFilterHidden && <AdvancedFilter onIbuChange={onIbuChange} onAlcVolumeChange={onAlcVolumeChange} onEbcChange={onEbcChange}/>}
         </div>
     )
 }

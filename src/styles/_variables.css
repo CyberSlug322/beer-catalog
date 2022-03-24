@@ -18,7 +18,11 @@
   --big-space: 100px;
   
 }
-
+.font-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
 .font-link {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
