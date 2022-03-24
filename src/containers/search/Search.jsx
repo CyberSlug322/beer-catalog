@@ -1,29 +1,19 @@
-import React,{useState} from "react";
+import React,{ useState } from "react";
 import { SearchInput } from "./SearchInput.jsx";
 import './Search.scss'
 import { SliderFilter } from "./SliderFilter.jsx";
 
 
-export const Search = () =>{
-const [searchParams, setSearchParams] = useState({
-    alcoholVolume: 0,
-    IBU: 0,
-    EBC: 0
-})
-
-
+export const Search = ({onInputChange, onIbuChange, onAlcVolumeChange, onEbcChange}) =>{
 
     return (
-        <div className="search">
-            <SearchInput/>
-            Filter results
-            <SliderFilter>Alcohol by volume</SliderFilter>
-            <SliderFilter>International bitterness units</SliderFilter>
-            <SliderFilter>Color by EBC</SliderFilter>
+        <div className="search-block">
+            <SearchInput onSearch={onInputChange}/>
+            <SliderFilter changeSerchTerm={onAlcVolumeChange}/>
+            <SliderFilter changeSerchTerm={onIbuChange}/>
+            <SliderFilter changeSerchTerm={onEbcChange}/>
         </div>
-    )}
-
-const onSearchHandler = (value) => {
-    setSearchTerm(value)
-    console.log("search happend")
+    )
 }
+
+

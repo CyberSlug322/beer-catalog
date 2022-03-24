@@ -1,12 +1,10 @@
 import React from "react";
-import { useRef } from 'react'
 
-export const SearchInput = ({ onSearch}) => {
-  const reference = useRef('')
+export const SearchInput = ({ onSearch }) => {
     
     const handleKeyDown = e => {
         if (e.key !== 'Enter' )  return
-        onSearch(e.target.value) 
+        onSearch([e.key, e.target.value]) 
     }
 
   return (

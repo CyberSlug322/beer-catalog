@@ -1,12 +1,20 @@
 import React from "react";
 import { useState } from "react";
+import './SliderFilter.scss'
 
-export const SliderFilter = ({children}) => {
-    const [inputValue, setInputValue] = useState(0);
+export const SliderFilter = ({children, changeSerchTerm}) => {
+    let timeoutId
+    const onChange = (e) => {
+        clearTimeout(timeoutId)
+        timeoutId = setTimeout( () => {
+            changeSerchTerm(Math.floor(e.target.value))
+        }
+        , 500)
+    }
     return (
-    <div>
+    <div className="slider-filter">
         {children}
-        <input type="range" min="0" max="100" step="0.01" value={inputValue} onChange={e => setInputValue(Math.floor(e.target.value))}></input>
+        <input className="sliderFilter__slider" type="range" min="0" max="100" step="0.01" onChange={onChange}></input>
     </div>
     )
     
