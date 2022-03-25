@@ -1,8 +1,7 @@
-import React,{ useRef } from "react";
+import React from "react";
 import './SearchInput.scss';
 
 export const SearchInput = ({ onSearch, className }) => {
-const inputValue = useRef(null)
     const handleKeyDown = e => {
         if (e.key !== 'Enter' )  return
         onSearch(e.target.value) 

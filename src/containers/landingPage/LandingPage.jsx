@@ -11,10 +11,9 @@ const LandingPage = () => {
     alcoholVolume: 0,
     IBU: 0,
     EBC: 0,
-    isFilterHidden: true
   })
 
-  const onInputChange = (value) => setSearchTerms({...searchTerms, input: value, isFilterHidden: false})
+  const onInputChange = (value) => setSearchTerms({...searchTerms, input: value})
   const onAlcVolumeChange = (value) => setSearchTerms({...searchTerms, alcoholVolume: value})
   const onIbuChange = (value) => setSearchTerms({...searchTerms, IBU: value})
   const onEbcChange = (value) => setSearchTerms({...searchTerms, EBC: value})
@@ -23,11 +22,11 @@ const LandingPage = () => {
     <Layout>
       <div className="landing-page">
         <Search 
-        isFilterHidden={searchTerms.isFilterHidden}
-        onInputChange={onInputChange}
-        onIbuChange={onIbuChange}
-        onAlcVolumeChange={onAlcVolumeChange}
-        onEbcChange={onEbcChange}
+          isFilterHidden={searchTerms.isFilterHidden}
+          onInputChange={onInputChange}
+          onIbuChange={onIbuChange}
+          onAlcVolumeChange={onAlcVolumeChange}
+          onEbcChange={onEbcChange}
         />
         landing!
         <BeerList/>
