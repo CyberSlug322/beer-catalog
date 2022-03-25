@@ -27,6 +27,7 @@ const LandingPage = () => {
           onIbuChange={onIbuChange}
           onAlcVolumeChange={onAlcVolumeChange}
           onEbcChange={onEbcChange}
+          className="landing-page__search-block"
         />
         landing!
         <BeerList/>
