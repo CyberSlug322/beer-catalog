@@ -1,18 +1,22 @@
 import React,{ useEffect, useState } from "react";
 import { fetchBeers } from "../../utils/api";
+import { LoadingSpinner } from "../loadingSpinner/LoadingSpinner.jsx";
+import { BeerList } from './BeerList.jsx'
 
-export const BeerListLoader = ({loadBeers, loadFilteredBeers}) => {
+export const BeerListLoader = () => {
     const [isLoading, setIsLoading] = useState(true)
+    const [beersArray, setBeersArray] = useState([]);
     useEffect(
         async () => {
             const beersList = await fetchBeers()
-            loadBeers(beersList)
+            setBeersArray(beersList)
             setIsLoading(false)
         },[])
 
     return (
         <div>
-        {isLoading && <label>Loading...</label>}
+            <BeerList beersArray={beersArray}/>
+            {isLoading && <LoadingSpinner className="beer-list-loader__loading-spinner"/>}
         </div>
     )
 }
