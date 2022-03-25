@@ -4,8 +4,6 @@ import thunk from "redux-thunk";
 import { persistStore, persistReducer, } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import { beerFilterReducer } from "./reducers/beerFilter.reducer"; 
-import { beersReducer } from "./reducers/beers.reducer"; 
 
 const persistConfig = {
     key: 'root',
@@ -13,8 +11,7 @@ const persistConfig = {
   }
 
 const rootReducer = combineReducers( {
-    beers: beersReducer,
-    filterBeers: beerFilterReducer
+    
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
