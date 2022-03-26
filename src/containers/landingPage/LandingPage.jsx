@@ -2,7 +2,7 @@ import React,{ useState } from "react";
 import {Layout} from "../layout/Layout.jsx";
 import {BeerList} from "../beerList/BeerList.jsx";
 import './LandingPage.scss'
-import { Search } from "../search/Search.jsx";
+import { SearchBlock } from "../search/SearchBlock.jsx";
 
 
 const LandingPage = () => {
@@ -21,13 +21,13 @@ const LandingPage = () => {
   return( 
     <Layout>
       <div className="landing-page">
-        <Search 
-          isFilterHidden={searchTerms.isFilterHidden}
+        <SearchBlock 
           onInputChange={onInputChange}
           onIbuChange={onIbuChange}
           onAlcVolumeChange={onAlcVolumeChange}
           onEbcChange={onEbcChange}
           className="landing-page__search-block"
+          
         />
         landing!
         <BeerList/>

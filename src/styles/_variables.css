@@ -13,10 +13,12 @@
   --sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --error-color: #f2777a;
-  --tiny-space: 2px;
+  
   --small-space: 5px;
   --medium-space: 40px;
   --big-space: 100px;
+
+  --border-width-standard: 2px;
   
 }
 .font-bold {

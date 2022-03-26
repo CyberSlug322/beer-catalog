@@ -1,8 +1,8 @@
 import React from "react";
 import { SearchInput } from "./SearchInput.jsx";
-import './Search.scss'
+import './SearchBlock.scss'
 
-export const Search = ({onInputChange, className}) =>{
+export const SearchBlock = ({onInputChange, className}) =>{
 
     return (
         <div className={`search-block ${className}`}>

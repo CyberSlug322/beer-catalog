@@ -1,6 +1,8 @@
 
 .search-input {
-    border: none;
-    border-bottom: var(--tiny-space) solid var(--beer-description-color);
-    background-position: right;
+    
+    .search-input__custom-input {
+        width: 550px;
+        background-position: right;
+    }
 }
