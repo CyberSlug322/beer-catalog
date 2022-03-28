@@ -1,0 +1,10 @@
+.favorites-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .favorites-list__item {
+        margin: var(--medium-space) 0 0 var(--big-space);
+        
+    }
+}

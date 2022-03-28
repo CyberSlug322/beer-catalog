@@ -18,3 +18,36 @@ export const fetchBeers = async (page = 1) => {
     return response;     
 }
 
+export const exampleBeer = [
+    {
+      id:1,
+      name:"Buzz",
+      tagline:"A Real Bitter Experience.",
+      description:"A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+    },
+    {
+        id:1,
+        name:"Buzz",
+        tagline:"A Real Bitter Experience.",
+        description:"A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+      },
+      {
+        id:1,
+        name:"Buzz",
+        tagline:"A Real Bitter Experience.",
+        description:"A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+      },
+      {
+        id:1,
+        name:"Buzz",
+        tagline:"A Real Bitter Experience.",
+        description:"A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+      },
+      {
+        id:1,
+        name:"Buzz",
+        tagline:"A Real Bitter Experience.",
+        description:"A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+      },
+  ]
+  

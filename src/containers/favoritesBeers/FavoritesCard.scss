@@ -1,0 +1,14 @@
+
+.favorites-card {
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--light-font-color);
+
+    .favorites-card__image {
+        margin-bottom: 5px;
+        width: 200px;
+    }
+}
+
