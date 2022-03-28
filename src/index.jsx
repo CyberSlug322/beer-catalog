@@ -8,9 +8,9 @@ function Main () {
     return (
       <React.StrictMode>
         <BrowserRouter>    
-             <App /> 
+          <App /> 
         </BrowserRouter>
-      </React.StrictMode>
+      </React.StrictMode> 
     )
   }
 
@@ -18,3 +18,4 @@ render (
     <Main/>,
     document.getElementById('root')
 )
+

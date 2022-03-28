@@ -1,8 +1,8 @@
 import React,{ useState } from "react";
 import {Layout} from "../layout/Layout.jsx";
-import {BeerList} from "../beerList/BeerList.jsx";
 import './LandingPage.scss'
 import { SearchBlock } from "../search/SearchBlock.jsx";
+import { BeerListLoader } from "../beerList/BeerListLoader.jsx";
 
 
 const LandingPage = () => {
@@ -30,7 +30,7 @@ const LandingPage = () => {
           
         />
         landing!
-        <BeerList/>
+        <BeerListLoader/>
       </div> 
     </Layout> 
 
