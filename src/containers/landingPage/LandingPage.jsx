@@ -30,7 +30,7 @@ const LandingPage = () => {
           
         />
         landing!
-        <BeerListLoader/>
+        <BeerListLoader searchTerms={searchTerms}/>
       </div> 
     </Layout> 
 
