@@ -2,9 +2,12 @@ import React from "react";
 
 import './MenuButton.scss'
 
-export const MenuButton = () => (
-  <button className="menu-button"></button>
-)
+export const MenuButton = ({onMenuButtonClick}) => {
+
+  return (
+    <button className="menu-button" onClick={onMenuButtonClick}></button>
+  )
+}
   
   
 

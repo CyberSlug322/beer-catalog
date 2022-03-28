@@ -2,8 +2,8 @@ import React from "react";
 import './SideMenu.scss'
 import { Link } from "react-router-dom";
 
-export const SideMenu = () => (
-  <div className="side-menu header__side-menu">
+export const SideMenu = ({className, onMenuButtonClick}) => (
+  <div className={`side-menu ${className}` } onBlur={onMenuButtonClick}>
     <div className="side-menu__header">
         Beer Catalog
     </div>
