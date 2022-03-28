@@ -19,7 +19,7 @@ export const SearchInput = ({ onSearch }) => {
           handleKeyDown={handleKeyDown}
           inputValue={inputValue}
           />
-        <Icon onClick={() => onSearch(inputValue)}/>
+        <Icon onClick={() => onSearch(inputValue)} className="search-input__icon"/>
     
     </div>  
                 

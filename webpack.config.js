@@ -48,8 +48,7 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                     ]
-            },
-            
+            },   
             {
               test: /\.jsx$/,
               exclude: /(node_modules)/,
@@ -57,11 +56,10 @@ module.exports = {
                 loader: 'babel-loader',
               }
             },
-            
             {
               test: /\.svg$/,
-              loader: 'svg-inline-loader?classPrefix'
-          }
+              use: ['@svgr/webpack'],
+            }
         ]
     },
     entry: {
