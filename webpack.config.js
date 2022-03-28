@@ -25,7 +25,7 @@ module.exports = {
         new CompressionPlugin({
           filename: "[path][base].br",
           algorithm: "brotliCompress",
-          test: /\.(js|css|html|svg|jpg)$/,
+          test: /\.(js|css|html|jpg)$/,
           compressionOptions: {
             params: {
               [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
@@ -49,10 +49,7 @@ module.exports = {
                     "sass-loader",
                     ]
             },
-            {
-                test:/\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
+            
             {
               test: /\.jsx$/,
               exclude: /(node_modules)/,
@@ -60,6 +57,11 @@ module.exports = {
                 loader: 'babel-loader',
               }
             },
+            
+            {
+              test: /\.svg$/,
+              loader: 'svg-inline-loader?classPrefix'
+          }
         ]
     },
     entry: {

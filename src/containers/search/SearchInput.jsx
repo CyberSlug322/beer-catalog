@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CustomInput } from "../../components/customInput/CustomInput.jsx";
 import './SearchInput.scss';
+import Icon from "../../img/search-icon.svg"
 
 export const SearchInput = ({ onSearch }) => {
   const [inputValue, setInputValue] = useState('')
@@ -9,7 +10,6 @@ export const SearchInput = ({ onSearch }) => {
       onSearch(inputValue) 
   }
   const handleInputChange = (e) => setInputValue(e.target.value)
-
   return (    
     <div className="search-input"> 
         <CustomInput
@@ -19,9 +19,8 @@ export const SearchInput = ({ onSearch }) => {
           handleKeyDown={handleKeyDown}
           inputValue={inputValue}
           />
-        <img src="../../img/search-icon.svg" onClick={() => onSearch(inputValue)}/>
-            
-        
+        <Icon onClick={() => onSearch(inputValue)}/>
+    
     </div>  
                 
   );
