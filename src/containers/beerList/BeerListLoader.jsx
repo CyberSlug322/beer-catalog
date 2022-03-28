@@ -21,7 +21,7 @@ export const BeerListLoader = () => {
     return (
         <div className="beer-list-loader">
             <BeerList beersArray={beers}/>
-            {requestStatus.isError && <ErrorMessage/>}
+            {requestStatus.isError && <ErrorMessage>An error has occurred</ErrorMessage>}
             {requestStatus.isLoading && <LoadingSpinner className="beer-list-loader__loading-spinner"/>}
         </div>
     )
