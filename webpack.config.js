@@ -62,6 +62,11 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+      alias: {
+        Images: path.resolve(__dirname, 'src/img/'),
+      },
+    },
     entry: {
         main: ['@babel/polyfill','./src/index.jsx'], 
       },

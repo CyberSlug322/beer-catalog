@@ -1,5 +1,5 @@
 import React from "react";
-import BurgerButton from '../../img/burgerButton.svg'
+import BurgerButton from 'Images/burgerButton.svg'
 
 import './MenuButton.scss'
 
