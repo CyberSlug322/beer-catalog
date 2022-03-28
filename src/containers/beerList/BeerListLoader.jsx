@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from "react";
-import ErrorMessage from "../../components/error/ErrorMessage";
+import ErrorMessage from "../../components/error/ErrorMessage.jsx";
 import { fetchBeers } from "../../utils/api";
 import { LoadingSpinner } from "../loadingSpinner/LoadingSpinner.jsx";
 import { BeerList } from './BeerList.jsx'
