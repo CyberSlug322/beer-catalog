@@ -5,10 +5,11 @@
     align-items: center;
     background-color: var(--light-font-color);   
     box-shadow: 0px 0px 4px var(--beer-description-color);
-    padding: var(--default-space);
+    padding: 0px var(--default-space);
     .favorites-card__image {
-        margin-bottom: 5px;
+        margin: var(--default-space);
         width: 150px;
     }
+    
 }
 

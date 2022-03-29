@@ -1,15 +1,18 @@
 .favorites-card-content {
-    
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
- 
+    
     .favorites-card-content__favorites-button {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: var(--default-space);
+        margin-left: var(--medium-space);
+        color: var(--font-color);
     }
     
     .favorites-card-content__open-button {
-        margin-top: 20px;
+        margin-top: var(--default-space);
+        color: var(--font-color);
     }
 
     .favorites-card-content__title, .favorites-card-content__tagline {
@@ -22,5 +25,10 @@
 
     .favorites-card-content__tagline {
         color: var(--beer-description-color);
+    }
+    .favorites-card-content__button-panel {
+        align-self: flex-start;
+        flex-grow: 1;
+        justify-self: flex-end;
     }
 }
