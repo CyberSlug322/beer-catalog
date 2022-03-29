@@ -1,20 +1,33 @@
 .beer-card-content {
+    display: flex;
+    flex-direction: column;
     background-color: var(--beer-description-color);   
     height: 100%;
     width: 100%;
-    padding: 20px;
- 
+    padding: var(--default-space);
+    
     .beer-card-content__favorites-button {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: var(--default-space);
+        margin-left: var(--medium-space);
     }
     
     .beer-card-content__open-button {
-        margin-top: 20px;
+        margin-top: var(--default-space);
+        margin-left: var(--default-space);
     }
 
     .beer-card-content__title {
         margin-top: var(--small-space);
+    }
+    
+    .beer-card-content__tagline {
+        margin-top: var(--small-space);
+    }
+
+    .beer-card-content__button-panel {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
     }
 }
 
