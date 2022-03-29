@@ -9,22 +9,25 @@
     .beer-card-content__favorites-button {
         margin-top: var(--default-space);
         margin-left: var(--medium-space);
-        align-self: end;;
     }
     
     .beer-card-content__open-button {
         margin-top: var(--default-space);
         margin-left: var(--default-space);
-        align-self: end;;
     }
 
     .beer-card-content__title {
+        margin-top: var(--small-space);
+    }
+    
+    .beer-card-content__tagline {
         margin-top: var(--small-space);
     }
 
     .beer-card-content__button-panel {
         display: flex;
         flex-grow: 1;
+        align-items: flex-end;
     }
 }
 
