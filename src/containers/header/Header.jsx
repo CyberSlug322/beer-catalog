@@ -6,7 +6,7 @@ import { SideMenu } from '../sideMenu/SideMenu.jsx';
 export const Header = ({className}) => (
     <header className={`header ${className} `}>
       <MenuButton/>
-      {/* <SideMenu className="header__side-menu"/> */}
+      <SideMenu className="header__side-menu"/>
       <label className='header__title font-h1'>Beer Catalog </label>
     </header>
 );

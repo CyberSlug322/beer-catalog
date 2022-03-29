@@ -12,7 +12,7 @@ export const BeerListLoader = ({input, alcoholVolume, IBU, EBC}) => {
         async () => {
             try {
                 setRequestStatus({isLoading: true, isError: false})
-                const beersList = await fetchBeers(1, input)
+                const beersList = await fetchBeers(1, input, alcoholVolume, IBU, EBC)
                 setBeers(beersList)
                 setRequestStatus({isLoading: false, isError: false})
             } catch (e) {
