@@ -1,8 +1,7 @@
 .favorites-card-content {
-    background-color: var(--beer-description-color);   
+    
     height: 100%;
     width: 100%;
-    padding: 20px;
  
     .favorites-card-content__favorites-button {
         margin-top: 20px;
@@ -13,7 +12,15 @@
         margin-top: 20px;
     }
 
-    .favorites-card-content__title {
+    .favorites-card-content__title, .favorites-card-content__tagline {
         margin-top: var(--small-space);
+    }
+
+    .favorites-card-content__description {
+        margin-top: var(--default-space);
+    }
+
+    .favorites-card-content__tagline {
+        color: var(--beer-description-color);
     }
 }

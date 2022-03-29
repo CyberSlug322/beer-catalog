@@ -8,6 +8,7 @@ import './FavoritesPage.scss'
 const FavoritesPage = () => (
     <Layout>
       <div className="favorites-page">
+        <h1 className="favorites-page__title">Your favorite beers</h1>
         <FavoritesList favoritesList={exampleBeer}/>
         <PaginationBlock/>
       </div>
