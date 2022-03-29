@@ -65,6 +65,7 @@ module.exports = {
     resolve: {
       alias: {
         Images: path.resolve(__dirname, 'src/img/'),
+        Constants: path.resolve(__dirname, 'src/constants/'),
       },
     },
     entry: {

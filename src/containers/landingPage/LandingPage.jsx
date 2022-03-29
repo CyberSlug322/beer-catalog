@@ -17,6 +17,7 @@ const LandingPage = () => {
   const onAlcVolumeChange = (value) => setSearchTerms({...searchTerms, alcoholVolume: value})
   const onIbuChange = (value) => setSearchTerms({...searchTerms, IBU: value})
   const onEbcChange = (value) => setSearchTerms({...searchTerms, EBC: value})
+  console.log(searchTerms)
   return( 
     <Layout>
       <div className="landing-page">
