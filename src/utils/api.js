@@ -12,8 +12,9 @@ const customFetch = async (url, method = "GET") => {
 })
 }
 
-export const fetchBeers = async (page = 1) => {
-    const url = `${defaultUrl}/beers?page=${page}`;
+export const fetchBeers = async (page = 1, input = null) => {
+    const beerQuery = input.text ? `beer_name=${input.text}` : '';
+    const url = `${defaultUrl}/beers?${beerQuery}&page=${page}`;
     const response = await customFetch(url);
     return response;     
 }
@@ -51,3 +52,4 @@ export const exampleBeer = [
       },
   ]
   
+
