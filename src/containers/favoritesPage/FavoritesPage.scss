@@ -1,8 +1,18 @@
 .favorites-page {
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1700px;
     margin: 0px auto;
+
+    .favorites-page__title {
+        align-self: center;
+    }
+    .favorites-page__pagination {
+        margin-top: var(--default-space);
+        margin-right: var(--biggest-space);
+        align-self: center;
+    }
 }

@@ -2,9 +2,9 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
     .favorites-list__item {
         margin: var(--medium-space) 0 0 var(--big-space);
-        
+        max-width: 1000px;
     }
 }
