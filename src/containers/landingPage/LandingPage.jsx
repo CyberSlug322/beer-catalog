@@ -7,17 +7,16 @@ import { BeerListLoader } from "../beerList/BeerListLoader.jsx";
 
 const LandingPage = () => {
   const [searchTerms, setSearchTerms] = useState({
-    input: '',
+    input:{text: ''},
     alcoholVolume: 0,
     IBU: 0,
     EBC: 0,
   })
 
-  const onInputChange = (value) => setSearchTerms({...searchTerms, input: value})
+  const onInputChange = (value) => setSearchTerms({...searchTerms, input: {text: value}})
   const onAlcVolumeChange = (value) => setSearchTerms({...searchTerms, alcoholVolume: value})
   const onIbuChange = (value) => setSearchTerms({...searchTerms, IBU: value})
   const onEbcChange = (value) => setSearchTerms({...searchTerms, EBC: value})
-  console.log(searchTerms)
   return( 
     <Layout>
       <div className="landing-page">
@@ -26,11 +25,13 @@ const LandingPage = () => {
           onIbuChange={onIbuChange}
           onAlcVolumeChange={onAlcVolumeChange}
           onEbcChange={onEbcChange}
-          className="landing-page__search-block"
-          
+          className="landing-page__search-block"         
         />
-        landing!
-        <BeerListLoader searchTerms={searchTerms}/>
+        <BeerListLoader 
+         input={searchTerms.input} 
+         alcoholVolume={searchTerms.alcoholVolume} 
+         IBU={searchTerms.IBU} 
+         EBC={searchTerms.EBC}/>
       </div> 
     </Layout> 
 
