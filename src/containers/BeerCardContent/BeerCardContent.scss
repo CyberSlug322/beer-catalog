@@ -2,19 +2,24 @@
     background-color: var(--beer-description-color);   
     height: 100%;
     width: 100%;
-    padding: 20px;
- 
+    padding: var(--default-space);
+    
     .beer-card-content__favorites-button {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: var(--default-space);
+        margin-left: var(--default-space);
     }
     
     .beer-card-content__open-button {
-        margin-top: 20px;
+        margin-top: var(--default-space);
     }
 
     .beer-card-content__title {
         margin-top: var(--small-space);
+    }
+
+    .beer-card-content__button-panel {
+        flex-grow: 1;
+        justify-self: flex-end;
     }
 }
 
