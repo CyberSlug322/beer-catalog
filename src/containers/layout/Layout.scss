@@ -1,7 +1,9 @@
 .layout {
   .layout__header {
-    position: fixed;
-    
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   .layout__side-menu {
     
