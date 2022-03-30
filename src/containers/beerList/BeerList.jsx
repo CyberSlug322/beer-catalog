@@ -1,6 +1,6 @@
 import React from "react";
-import { BeerCard } from "../beerCard/BeerCard.jsx";
-import { Placeholder } from "../../components/placeholder/Placeholder.jsx";
+import { BeerCard } from "BeerCard/BeerCard.jsx";
+import { Placeholder } from "Placeholder/Placeholder.jsx";
 
 import './BeerList.scss'
 

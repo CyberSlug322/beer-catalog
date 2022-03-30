@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SearchInput } from "./SearchInput.jsx";
 import './SearchBlock.scss';
-import { AdvancedFilter } from "../advancedFilter/AdvancedFilter.jsx";
+import { AdvancedFilter } from "AdvancedFilter/AdvancedFilter.jsx";
 
 export const SearchBlock = ({onInputChange, onIbuChange, onEbcChange, onAlcVolumeChange, className}) =>{
     const [isFilterActive, setFilterActive] = useState(false);
