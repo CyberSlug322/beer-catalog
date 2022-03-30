@@ -3,7 +3,7 @@ import {Layout} from "../layout/Layout.jsx";
 
 const FavoritesPage = () => (
     <Layout>
-      favorites
+      
     </Layout>
 );
 
