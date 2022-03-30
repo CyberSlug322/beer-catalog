@@ -19,5 +19,8 @@ export const fetchBeers = async (page = 1, input = null) => {
     return response;     
 }
 
-
-
+export const fetchFavoriteBeers = async (beerIds, page = 1, itemsPerPage = 5) => {
+    const url = `${defaultUrl}/beers?${[`ids=${beerIds.join('|')}`, `page=${page}`, `pre_page=${itemsPerPage}`].join('&')}`;
+    const response = await customFetch(url);
+    return response;     
+}
