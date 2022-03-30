@@ -65,6 +65,7 @@ module.exports = {
     resolve: {
       alias: {
         Images: path.resolve(__dirname, 'src/img/'),
+        Redux: path.resolve(__dirname, 'src/redux/'),
       },
     },
     entry: {
