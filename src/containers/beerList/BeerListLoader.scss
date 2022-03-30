@@ -1,6 +1,8 @@
 .beer-list-loader {
+    display: flex;
     .beer-list-loader__loading-spinner {
         margin-top: 300px;
-        
+        justify-self: center;
+        align-self: center;
     }
 }

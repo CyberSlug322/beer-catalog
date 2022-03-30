@@ -13,7 +13,13 @@ export const SearchBlock = ({onInputChange, onIbuChange, onEbcChange, onAlcVolum
     return (
         <div className={`search-block ${className}`}>
             <SearchInput onSearch={onSearch} className="search-block__search-input"/>
-            {isFilterActive && <AdvancedFilter onIbuChange={onIbuChange} onAlcVolumeChange={onAlcVolumeChange} onEbcChange={onEbcChange}/>}
+            {isFilterActive &&
+            <AdvancedFilter
+                onIbuChange={onIbuChange}
+                onAlcVolumeChange={onAlcVolumeChange}
+                onEbcChange={onEbcChange}
+                className="search-block__advanced-filter"
+            />}
         </div>
     )
 }

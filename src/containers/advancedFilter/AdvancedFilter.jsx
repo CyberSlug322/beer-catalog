@@ -2,10 +2,10 @@ import React from "react";
 import { SliderFilter } from "./SliderFilter.jsx";
 import './AdvancedFilter.scss'
 
-export const AdvancedFilter = ({ onIbuChange, onAlcVolumeChange, onEbcChange}) => {
+export const AdvancedFilter = ({ onIbuChange, onAlcVolumeChange, onEbcChange, className}) => {
 
     return (
-        <div className="advanced-filter">
+        <div className={`advanced-filter ${className}`}>
             <label className="font-bold advanced-filter__title">Filter results</label>
             <SliderFilter onInputChange={onAlcVolumeChange} sliderLimit={54} title="Alcohol by volume"></SliderFilter>
             <SliderFilter onInputChange={onIbuChange} sliderLimit={100} title="International Bitterness Units"></SliderFilter>

@@ -3,6 +3,7 @@ import ErrorMessage from "../../components/error/ErrorMessage.jsx";
 import { fetchBeers } from "../../utils/api";
 import { LoadingSpinner } from "../loadingSpinner/LoadingSpinner.jsx";
 import { BeerList } from './BeerList.jsx'
+import './BeerListLoader.scss';
 
 export const BeerListLoader = ({input, alcoholVolume, IBU, EBC}) => {
     const [requestStatus, setRequestStatus] = useState({isLoading: true, isError: false})
@@ -19,7 +20,7 @@ export const BeerListLoader = ({input, alcoholVolume, IBU, EBC}) => {
                 console.log(e)
                 setRequestStatus({isLoading: false, isError: true})
             }
-        },[input]) 
+        },[input, alcoholVolume, IBU, EBC]) 
 
     return (
         <div className="beer-list-loader">
