@@ -1,0 +1,9 @@
+.advanced-filter {
+    display: flex;
+    flex-direction: column;
+
+    .advanced-filter__title {
+        align-self: center;
+        margin-bottom: var(--default-space);
+    }
+}

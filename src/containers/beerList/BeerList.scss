@@ -2,10 +2,11 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-
+    flex-grow: 1;
     .beer-list__item {
         width: 400px;
         margin: var(--medium-space) 0 0 var(--big-space);
         
     }
+
 }
