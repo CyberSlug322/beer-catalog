@@ -1,0 +1,13 @@
+.favorites-page {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0px auto;
+
+    .favorites-page__pagination {
+        margin-top: var(--default-space);
+    }
+}

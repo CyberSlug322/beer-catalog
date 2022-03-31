@@ -1,0 +1,15 @@
+
+.favorites-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--light-font-color);   
+    box-shadow: 0px 0px 4px var(--beer-description-color);
+    padding: var(--default-space);
+    .favorites-card__image {
+        
+        width: 150px;
+    }
+    
+}
+
