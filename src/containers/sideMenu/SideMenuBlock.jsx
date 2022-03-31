@@ -8,7 +8,7 @@ export const SideMenuBlock = ({onOutsideMenuClick, className}) => {
         if (e.target === domRef.current) onOutsideMenuClick() 
     }
     return (
-        <div ref={domRef} onClick={onOutsideClick} className="side-menu-block">
+        <div ref={domRef} onClick={onOutsideClick} className={`${className}-block`}>
             <SideMenu className={className}/>
         </div>
     )
