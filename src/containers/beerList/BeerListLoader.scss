@@ -1,13 +1,12 @@
 .beer-list-loader {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .beer-list-loader__loading-spinner {
         margin-top: 300px;
         justify-self: center;
         align-self: center;
     }
 
-    .beer-list-loader__placeholder {
-        justify-self: center;
-        align-self: center;
-    }
 }

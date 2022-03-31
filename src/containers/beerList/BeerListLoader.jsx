@@ -28,7 +28,7 @@ export const BeerListLoader = ({input, alcoholVolume, IBU, EBC}) => {
             {beers.length ?
                 <BeerList beersArray={beers}/> :
                 <Placeholder content="cannot find beers which match your request" className="beer-list-loader__placeholder"/> }     
-            {requestStatus.isError && <ErrorMessage>An error has occurred</ErrorMessage>}
+            {requestStatus.isError && <ErrorMessage className="beer-list-loader__error">An error has occurred</ErrorMessage>}
             {requestStatus.isLoading && <LoadingSpinner className="beer-list-loader__loading-spinner"/>}
         </div>
     )

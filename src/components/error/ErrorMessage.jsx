@@ -1,8 +1,8 @@
 import React from "react";
 import "./ErrorMessage.scss"
 
-const ErrorMessage = ({children}) => (
-  <label className="error-message">{children}</label>
+const ErrorMessage = ({children, className = ''}) => (
+  <label className={`error-message ${className}`}>{children}</label>
 );
 
 export default ErrorMessage;
