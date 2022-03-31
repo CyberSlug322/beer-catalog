@@ -1,0 +1,11 @@
+.favorites-list {
+    flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .favorites-list__item {
+        margin-top: var(--medium-space);
+        max-width: 1000px;
+    }
+}
