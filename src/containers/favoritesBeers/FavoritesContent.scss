@@ -4,16 +4,7 @@
     height: 100%;
     width: 100%;
     
-    .favorites-card-content__favorites-button {
-        margin-top: var(--default-space);
-        margin-left: var(--medium-space);
-        color: var(--font-color);
-    }
     
-    .favorites-card-content__open-button {
-        margin-top: var(--default-space);
-        color: var(--font-color);
-    }
 
     .favorites-card-content__title, .favorites-card-content__tagline {
         margin-top: var(--small-space);
@@ -27,8 +18,20 @@
         color: var(--beer-description-color);
     }
     .favorites-card-content__button-panel {
+        margin-top: var(--default-space);
         align-self: flex-start;
         flex-grow: 1;
         justify-self: flex-end;
+
+        .favorites-card-content__favorites-button {
+            margin-left: var(--medium-space);
+            color: var(--font-color);
+        }
+        
+        .favorites-card-content__open-button {
+            
+            color: var(--font-color);
+        }
+
     }
 }
