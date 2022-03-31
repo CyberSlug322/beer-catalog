@@ -3,22 +3,15 @@ import ErrorMessage from "../../components/error/ErrorMessage.jsx";
 import { fetchBeers } from "../../utils/api";
 import { LoadingSpinner } from "../loadingSpinner/LoadingSpinner.jsx";
 import { BeerList } from './BeerList.jsx'
+import { InfiniteScroll } from "./InfiniteScroll.jsx";
 
 export const BeerListLoader = ({input, alcoholVolume, IBU, EBC}) => {
     const [requestStatus, setRequestStatus] = useState({isLoading: true, isError: false, isAllBeersLoaded: false})
     const [beers, setBeers] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-
-    const handleScroll = () => {
-        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;  
-        setCurrentPage(currentPage + 1)
-      }
-
-    useEffect(
-        () => {
-        !requestStatus.isAllBeersLoaded && window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      }, [currentPage]);
+    const onPageScrolled = () => {
+        requestStatus.isAllBeersLoaded || setCurrentPage(currentPage + 1)
+    }
 
     useEffect(
         async () => {
@@ -48,13 +41,12 @@ export const BeerListLoader = ({input, alcoholVolume, IBU, EBC}) => {
             }
         },[currentPage])
     
-
-
     return (
         <div className="beer-list-loader">
             <BeerList beersArray={beers}/>
             {requestStatus.isError && <ErrorMessage>An error has occurred</ErrorMessage>}
             {requestStatus.isLoading && <LoadingSpinner className="beer-list-loader__loading-spinner"/>}
+            <InfiniteScroll onPageScrolled={onPageScrolled} currentPage={currentPage}/>
         </div>
     )
 }
