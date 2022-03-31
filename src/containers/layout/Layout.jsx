@@ -12,7 +12,7 @@ export const Layout = ({children}) => {
   return (
     <div className="layout">
       <Header className="layout__header" onMenuButtonClick={onMenuButtonClick}/>
-      {isMenuActive && <SideMenuBlock className="layout__side-menu" onMenuButtonClick={onMenuButtonClick}/>}
+      {isMenuActive && <SideMenuBlock className="layout__side-menu" onOutsideMenuClick={onMenuButtonClick}/>}
       {children} 
     </div>
   )

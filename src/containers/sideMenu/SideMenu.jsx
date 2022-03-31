@@ -4,7 +4,7 @@ import { SideMenuHeader } from "./SideMenuHeader.jsx";
 import { SideMenuNavigation } from "./SideMenuNavigation.jsx";
 
 export const SideMenu = ({className}) => (
-  <div className={`side-menu ${className}`} onClick={(e)=> e.stopPropagation()}> 
+  <div className={`side-menu ${className}`}> 
     <SideMenuHeader className="side-menu__header"/>
     <SideMenuNavigation className="side-menu__nav-bar"/>
   </div>

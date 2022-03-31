@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useRef} from "react";
 import { SideMenu } from "./SideMenu.jsx";
 import './SideMenuBlock.scss';
 
-export const SideMenuBlock = ({onMenuButtonClick, className}) => (
-
-    <div onClick={onMenuButtonClick} className="side-menu-block">
-        <SideMenu className={className}/>
-    </div>
-)
+export const SideMenuBlock = ({onOutsideMenuClick, className}) => {
+    const domRef = useRef('');
+    const onOutsideClick = (e) => {
+        if (e.target === domRef.current) onOutsideMenuClick() 
+    }
+    return (
+        <div ref={domRef} onClick={onOutsideClick} className="side-menu-block">
+            <SideMenu className={className}/>
+        </div>
+    )
+}
