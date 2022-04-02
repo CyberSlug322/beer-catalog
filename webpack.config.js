@@ -66,6 +66,10 @@ module.exports = {
       alias: {
         Images: path.resolve(__dirname, 'src/img/'),
         Redux: path.resolve(__dirname, 'src/redux/'),
+        Constants: path.resolve(__dirname, 'src/constants/'),
+        BeerCard: path.resolve(__dirname, 'src/containers/beerCard/'),
+        Placeholder: path.resolve(__dirname, 'src/components/placeholder/'),
+        AdvancedFilter: path.resolve(__dirname, 'src/containers/advancedFilter'),
       },
     },
     entry: {

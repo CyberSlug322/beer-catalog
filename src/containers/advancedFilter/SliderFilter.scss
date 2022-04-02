@@ -1,0 +1,21 @@
+.slider-filter {
+    padding: var(--small-space);
+    display: flex;
+    justify-content: space-between;
+
+    .slider-filter__slider {
+        width: 200px;
+        height: 2px;  
+        align-self: center;
+        margin-left: var(--small-space);
+    }
+
+    .slider-filter__title {
+        flex-grow: 1;
+    }
+
+    .slider-filter__slider-value {
+       margin-left: var(--big-space);
+       width: var(--medium-space);
+    }
+}
